@@ -8,11 +8,11 @@
 //  |   |   |   |
 //  '---'   '---'
 
-//  ____           _                          
-// | __ ) _   _   / \   _ __   ___  ___ ___  
-// |  _ \| | | | / _ \ | '_ \ / _ \/ _ \ __| 
-// | |_) | |_| |/ ___ \| | | |  __/  __\__ \ 
-// |____/ \__, /_/   \_\_| |_|\___|\___|___/ 
+//  ____           _
+// | __ ) _   _   / \   _ __   ___  ___ ___
+// |  _ \| | | | / _ \ | '_ \ / _ \/ _ \ __|
+// | |_) | |_| |/ ___ \| | | |  __/  __\__ \
+// |____/ \__, /_/   \_\_| |_|\___|\___|___/
 //       |___/
 
 // ==========================================
@@ -198,7 +198,7 @@
 // document.write("Total cost: " + checkoutTotal + " PKR<br><br>");
 
 // Q8: Percentage calculator.
-// var totalExamMarks = 500; 
+// var totalExamMarks = 500;
 // var marksObtainedTotal = 400;
 // var percentage = (marksObtainedTotal / totalExamMarks) * 100;
 // document.write("Total Marks: " + totalExamMarks + "<br>");
@@ -226,7 +226,7 @@
 
 // Q12: Geometrizer.
 // var radius = 20;
-// var pi = 3.142; 
+// var pi = 3.142;
 // var circumference = 2 * pi * radius;
 // var area = pi * radius * radius;
 // document.write("Radius of a circle: " + radius + "<br>");
@@ -300,3 +300,239 @@
 // document.write("<tr><td>" + subject3 + "</td><td>" + totalMarksPerSubject + "</td><td>" + marksObtained3 + "</td><td>" + perc3 + "%</td></tr>");
 // document.write("<tr><th>Total</th><th>300</th><th>" + grandTotalMarks + "</th><th>" + grandPercentage + "%</th></tr>");
 // document.write("</table>");
+
+// ==========================================
+// Chapter 8: Strings
+// ==========================================
+
+// Q1: Concatenate string from prompts.
+// var firstName = prompt("Enter your first name:");
+// var lastName = prompt("Enter your last name:");
+// var fullName = firstName + " " + lastName;
+// alert("Hello, " + fullName + "!");
+
+// Q2: Find length and display in alert.
+// var favoriteFruit = prompt("Enter your favorite fruit:");
+// alert("The length of " + favoriteFruit + " is " + favoriteFruit.length + ".");
+
+// Q3: Find first index of a character.
+// var text = "Pakistani";
+// var character = prompt("Enter a character to search:");
+// alert("The first index of '" + character + "' in '" + text + "' is " + text.indexOf(character));
+
+// Q4: Find last index of a character.
+// var text2 = "Hello World";
+// var character2 = prompt("Enter a character to search:");
+// alert("The last index of '" + character2 + "' in '" + text2 + "' is " + text2.lastIndexOf(character2));
+
+// Q5: Display length and index of a specific character in alert.
+// var countryName = "Pakistan";
+// var searchChar = "n";
+// alert("String: " + countryName + "\nLength: " + countryName.length + "\nIndex of '" + searchChar + "': " + countryName.indexOf(searchChar));
+
+// Q6: Replace all occurrences of a character.
+// var sentence = "Ali and Sami are best friends. They play cricket together.";
+// var updatedSentence = sentence.replace(/and/g, "&");
+// document.write("<h2>Chapter 6 String Replacement</h2>");
+// document.write("Original string: " + sentence + "<br>");
+// document.write("Updated string: " + updatedSentence + "<br><br>");
+
+// Q7: Replace first occurrence using indexOf.
+// var message = "Ali and Sami are best friends. They play cricket together.";
+// var firstAndIndex = message.indexOf("and");
+// if (firstAndIndex !== -1) {
+//     var updatedMessage = message.substring(0, firstAndIndex) + "&" + message.substring(firstAndIndex + 3);
+//     document.write("<h2>Chapter 7 String Replacement</h2>");
+//     document.write("Original string: " + message + "<br>");
+//     document.write("Updated string: " + updatedMessage + "<br><br>");
+// }
+
+// Q8: Replace string using replace method.
+// var textToUpdate = "Hyderabad";
+// var newText = textToUpdate.replace("Hyder", "Islan");
+// document.write("<h2>Chapter 8 String Replacement</h2>");
+// document.write("City: " + textToUpdate + "<br>");
+// document.write("New city: " + newText + "<br><br>");
+
+// Q9: Replace characters in a message.
+// var msg = "Hello World!";
+// var updatedMsg = msg.replace(/l/g, "L");
+// document.write("<h2>Chapter 9 String Replacement</h2>");
+// document.write("Original: " + msg + "<br>");
+// document.write("Updated: " + updatedMsg + "<br><br>");
+
+// Q10: Round a number up.
+// var numDecimal = 2.678;
+// var roundedUp = Math.ceil(numDecimal);
+// document.write("<h2>Chapter 10 Math Operations</h2>");
+// document.write("Original number: " + numDecimal + "<br>");
+// document.write("Rounded up: " + roundedUp + "<br><br>");
+
+// Q11: Round a number down.
+// var numDecimal2 = 2.34;
+// var roundedDown = Math.floor(numDecimal2);
+// document.write("<h2>Chapter 11 Math Operations</h2>");
+// document.write("Original number: " + numDecimal2 + "<br>");
+// document.write("Rounded down: " + roundedDown + "<br><br>");
+
+// Q12: Round to nearest integer.
+// var numDecimal3 = 3.58;
+// var rounded = Math.round(numDecimal3);
+// document.write("<h2>Chapter 12 Math Operations</h2>");
+// document.write("Original number: " + numDecimal3 + "<br>");
+// document.write("Rounded to nearest: " + rounded + "<br><br>");
+
+// Q13: Dice roll simulator.
+// var diceResult = Math.floor(Math.random() * 6) + 1;
+// document.write("<h2>Chapter 13 Random Numbers</h2>");
+// document.write("Random dice value: " + diceResult + "<br><br>");
+
+// Q14: Generate random number between 1 and 100.
+// var random1to100 = Math.floor(Math.random() * 100) + 1;
+// document.write("<h2>Chapter 14 Random Numbers</h2>");
+// document.write("Random number between 1 and 100: " + random1to100 + "<br><br>");
+
+// Q15: Generate random true/false.
+// var coinFlip = Math.random() < 0.5 ? "Heads" : "Tails";
+// document.write("<h2>Chapter 15 Random Booleans</h2>");
+// document.write("Random coin flip result: " + coinFlip + "<br><br>");
+
+// Q16: Generate random number 1-10.
+// var random1to10 = Math.floor(Math.random() * 10) + 1;
+// document.write("<h2>Chapter 16 Random Numbers</h2>");
+// document.write("Random number between 1 and 10: " + random1to10 + "<br><br>");
+
+// Q17: Convert string to integer.
+// var ageString = "25";
+// var ageInt = parseInt(ageString);
+// document.write("<h2>Chapter 17 String to Number</h2>");
+// document.write("Original string: " + ageString + " (type: " + typeof ageString + ")<br>");
+// document.write("Converted integer: " + ageInt + " (type: " + typeof ageInt + ")<br><br>");
+
+// Q18: Convert string to float.
+// var priceString = "25.99";
+// var priceFloat = parseFloat(priceString);
+// document.write("<h2>Chapter 18 String to Number</h2>");
+// document.write("Original string: " + priceString + " (type: " + typeof priceString + ")<br>");
+// document.write("Converted float: " + priceFloat + " (type: " + typeof priceFloat + ")<br><br>");
+
+// Q19: Convert integer to string.
+// var numToConvert = 123;
+// var convertedString = numToConvert.toString();
+// document.write("<h2>Chapter 19 Number to String</h2>");
+// document.write("Original number: " + numToConvert + " (type: " + typeof numToConvert + ")<br>");
+// document.write("Converted string: " + convertedString + " (type: " + typeof convertedString + ")<br><br>");
+
+// ==========================================
+// Chapter 9: User Input & Conditional statement
+// ==========================================
+
+//Q1: Write a program to take city name from user If user enters "Karachi"
+// then show in the following message "Welcome to the city of lights"
+
+//Answer:
+// let city = prompt("Enter your city name:");
+// if(city === "Karachi")
+// {document.write("Welcome to the city of lights");}
+
+//Q2 Write a program to take "gender" from user If user is male show "Good Morning Sir" If user is female show "Good Morning Ma'am"
+
+//Answer:
+// let gender = prompt("Enter your gender:");
+// if(gender === "male")
+// {document.write("Good Morning Sir");}
+// else if(gender === "female")
+// {document.write("Good Morning Ma'am");}
+
+//Q3Write a program to take a signal from the user & display message
+// according to the signal. If the user enters "Red",
+// display "Must Stop". If the user enters "Yellow",
+// display "Ready to Move". If the user enters "Green",
+// display "Move Now".
+
+//Answer:
+// let signal = prompt("Enter your signal:");
+// if(signal === "Red")
+// {document.write("Must Stop");}
+// else if(signal === "Yellow")
+// {document.write("Ready to Move");}
+// else if(signal === "Green")
+// {document.write("Move Now");}
+
+//Q4 If car fuel is not enough to reach the destination,
+// display the following message:
+
+//Answer:
+// let fuel = prompt("Enter your fuel:");
+// if(fuel < 0.25)
+// {document.write("Please refill your fuel");}
+
+//Q5 Write a program to take a variable as a number and
+// ensure that it is greater than 50 and if the variable is greater than 50
+// then display the following message in output
+
+//Answer:
+// let num = prompt("Enter a number:");
+// if(num > 50)
+// {document.write("The number is greater than 50");}
+
+//Q6 Write a program to take input from the user & display
+// whether the number is even or odd.
+
+//Answer:
+// let num = prompt("Enter a number:");
+// if(num % 2 === 0)
+// {document.write("The number is even");}
+// else
+// {document.write("The number is odd");}
+
+//Q7 Write a program to take input from the user & display
+// whether the number is even or odd.
+
+//Answer:
+// let num = prompt("Enter a number:");
+// if(num % 2 === 0)
+// {document.write("The number is even");}
+// else
+// {document.write("The number is odd");}
+
+//Q8 Write a program to take input from the user & display
+// whether the number is even or odd.
+
+//Answer:
+// let num = prompt("Enter a number:");
+// if(num % 2 === 0)
+// {document.write("The number is even");}
+// else
+// {document.write("The number is odd");}
+
+
+//Q9 Write a program to take input from the user & display
+// whether the number is even or odd.
+
+//Answer:
+// let num = prompt("Enter a number:");
+// if(num % 2 === 0)
+// {document.write("The number is even");}
+// else
+// {document.write("The number is odd");}
+
+//Q10 Write a program to take input from the user & display
+// whether the number is even or odd.
+
+//Answer:
+// let num = prompt("Enter a number:");
+// if(num % 2 === 0)
+// {document.write("The number is even");}
+// else
+// {document.write("The number is odd");}
+
+//Q11 Write a program to take input from the user & display
+// whether the number is even or odd.
+
+//Answer:
+// let num = prompt("Enter a number:");
+// if(num % 2 === 0)
+// {document.write("The number is even");}
+// else
+// {document.write("The number is odd");}
